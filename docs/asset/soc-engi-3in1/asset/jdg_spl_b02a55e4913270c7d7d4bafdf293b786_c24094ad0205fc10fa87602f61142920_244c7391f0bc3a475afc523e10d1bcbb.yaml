@@ -1,0 +1,72 @@
+chapter_starts:
+- 'no': 20
+  confidence: 0.85
+  final_reason: 序为正文前整体开端，符合前言序言致谢统一划分为一章的规则，标题单独成行且语义统领后续序文内容。
+  accepted_evidence:
+  - '行20 为 ## 序 独立成行，前方为书名、宣传语及图片，后方直接接序文概述段落'
+  - 上下文特征符合前置内容起始：前方无正文，后方为作者序的叙述段落
+  - 规则要求前言、序言、致谢等正文之前内容统一为一章，起点即此处
+  rejected_evidence:
+  - 复核方指出行66存在同级标题## 前言和致谢，但该标题属同一前置章节内部小节，不应另起新章
+  need_human_review: false
+- 'no': 110
+  confidence: 0.99
+  final_reason: '## 第1章　社会工程学初探 为最高层级大章标题，单独成行，编号连贯，语义统领全章内容。'
+  accepted_evidence:
+  - 标题单独成行，末尾无句号，长度小于30字
+  - 编号为第1章，属于全书最高层级大章
+  - 后1~3行为引语及正文概述，后续紧跟1.1等子节，符合上下文特征
+  rejected_evidence:
+  - 复核方以Markdown二级标题样式质疑，但全书章标题均使用##样式，编号和语义明确可区分
+  need_human_review: false
+- 'no': 376
+  confidence: 0.99
+  final_reason: '## 第2章 信息收集 为最高层级大章标题，编号连贯，单独成行且统领后续信息收集内容。'
+  accepted_evidence:
+  - 标题单独成行，格式与第1章一致
+  - 编号第2章与前章连贯，语义概括后续信息收集全章
+  - 前文为第1章小结，后文为第2章引言及2.1子节，上下文清晰
+  rejected_evidence:
+  - 复核方提出标题层级为二级的样式疑虑，但编号特征和语义足以判定为最高层级章
+  need_human_review: false
+- 'no': 887
+  confidence: 0.99
+  final_reason: '## 第3章 诱导 为最高层级大章标题，单独成行，编号连贯，语义统领后续诱导内容。'
+  accepted_evidence:
+  - 标题单独成行，编号第3章，长度符合
+  - 前文为第2章结尾小结，后文为第3章引言及3.1子节
+  - 语义概括性强，能覆盖后续诱导技巧章节
+  rejected_evidence:
+  - 复核方认为与前置标题同级样式，但编号特征和上下文足以排除误判
+  need_human_review: false
+- 'no': 1262
+  confidence: 0.99
+  final_reason: '## 第4章 伪装：如何成为任何人 为最高层级大章标题，编号连贯，单独成行且统领全章。'
+  accepted_evidence:
+  - 标题单独成行，含第4章编号，语义统领伪装主题
+  - 前文为第3章小结，后文直接进入4.1小节
+  - 格式特征符合章标题：无句号、单独成行
+  rejected_evidence:
+  - 复核方以冒号及二级标题样式提出样式误判可能，但编号和语义明确
+  need_human_review: false
+- 'no': 1613
+  confidence: 0.99
+  final_reason: '## 第5章 心理战术：社会工程心理学 为最高层级大章标题，编号连贯，单独成行且语义统领全章。'
+  accepted_evidence:
+  - 标题单独成行，编号第5章，与前章连贯
+  - 后接引言及5.1子节，前文为第4章小结
+  - 语义具有统领性，符合章标题特征
+  rejected_evidence:
+  - 复核方质疑标题层级与前置标题相同，但编号和上下文明确为正文大章
+  need_human_review: false
+- 'no': 2925
+  confidence: 0.99
+  final_reason: '## 第6章 影响：说服的力量 为最高层级大章标题，编号连贯，单独成行且统领后续内容。'
+  accepted_evidence:
+  - 标题单独成行，编号第6章，末尾无句号
+  - 前文为第5章小结收尾，后文为第6章引言及6.1子节
+  - 语义概括影响与说服主题，符合章标题统领性
+  rejected_evidence:
+  - 复核方提出空行隔离可能导致误判，但编号特征和语义足够强
+  need_human_review: false
+rejected_lines: []

@@ -1,0 +1,138 @@
+chapter_starts:
+- 'no': 6111
+  confidence: 0.72
+  final_reason: 虽非“第X章/第X部分”标题，但该行是第一本书正文结束后出现的目录/索引类附加材料，按“文末索引也划分为一章”的规则可单独成章；复核方反方不足以推翻。
+  accepted_evidence:
+  - 该行是正文结束后的目录/索引类附加材料，独立成行，位于第一本书第9章小结之后、第二本书书名页之前。
+  - 按分章规则，文末索引类内容可统一划分为一章。
+  rejected_evidence:
+  - 复核方指出“Table of Contents”不是第X章/第X部分标题。
+  - 复核方指出其后为版权信息、献词、序、前言及第1章等目录条目列表，而非由该标题统领的正文内容。
+  need_human_review: false
+- 'no': 6271
+  confidence: 0.8
+  final_reason: 该行是第二本书书名页标题，作为第二本书正文之前前置内容统一划分为一章的起点合理；复核方也保持划分。
+  accepted_evidence:
+  - 第二本书正文之前的前置内容（书名页、版权信息、献词、序、致谢和序言、前言等）应统一划分为一章。
+  - 该行是第二本书书名页标题，后接副标题、中文书名、版权信息等前置内容。
+  rejected_evidence:
+  - 复核方指出该行是英文书名而非章标题，分章点也可放在版权页或前言起始处。
+  need_human_review: false
+- 'no': 6606
+  confidence: 0.95
+  final_reason: 存在部分-章节结构，“第一部分 基础概念”是部分标题，按规则应划分新章。
+  accepted_evidence:
+  - 该行为“第一部分 基础概念”，属于部分层级标题。
+  - 上下文为前言结尾，后列本部分章节，6611起进入第1章正文。
+  rejected_evidence:
+  - 复核方提出可能来自目录，但此处后接正文且无目录列表特征。
+  need_human_review: false
+- 'no': 6611
+  confidence: 0.96
+  final_reason: “第1章 什么是非语言交流”为最高层级章标题，独立成行且后接引文和正文，应划分新章。
+  accepted_evidence:
+  - 该行编号为“第1章”，属于最高层级章标题。
+  - 前有部分标题6606，后接引文和正文段落。
+  rejected_evidence:
+  - 复核方提出其格式与目录条目相似，但当前位置属于正文开篇，不是目录。
+  need_human_review: false
+- 'no': 6881
+  confidence: 0.96
+  final_reason: “第2章 什么是社会工程”独立成行、无句号，编号为最高层级，前有第1章总结，后接引文和正文，应划分新章。
+  accepted_evidence:
+  - 该行编号为“第2章”，属于最高层级章标题。
+  - 前有第1章总结6871-6879，后接引文和正文。
+  rejected_evidence:
+  - 复核方提出标题中的空格排版可能来自自动生成目录，但其位置在正文中。
+  need_human_review: false
+- 'no': 7228
+  confidence: 0.95
+  final_reason: “第二部分 破译肢体语言”为部分标题，按部分-章节模式划分新章。
+  accepted_evidence:
+  - 该行为“第二部分 破译肢体语言”，属于部分层级标题。
+  - 前有第2章总结7216-7226，后列第3至第6章。
+  rejected_evidence:
+  - 复核方提出部分标题后紧接列表，可能被误认为目录标题，但这是正文中的部分导览。
+  need_human_review: false
+- 'no': 7235
+  confidence: 0.96
+  final_reason: “第3章 了解手的语言”独立成行，编号为最高层级，后接引文和正文，应划分新章。
+  accepted_evidence:
+  - 该行编号为“第3章”，属于最高层级章标题。
+  - 前有第二部分标题及章列表，后接引文和正文。
+  rejected_evidence:
+  - 复核方提出其与目录中“第3章 了解手的语言”重复，但此处上下文为正文。
+  need_human_review: false
+- 'no': 7534
+  confidence: 0.96
+  final_reason: “第4章 躯干、腿和脚”为最高层级章标题，前有第3章总结，后接引文和正文，应划分新章。
+  accepted_evidence:
+  - 该行编号为“第4章”，属于最高层级章标题。
+  - 前有第3章总结7522-7532，后接引文和正文。
+  rejected_evidence:
+  - 复核方提出标题格式较简，可能来自目录，但后文第4章正文证实其章标题性质。
+  need_human_review: false
+- 'no': 7662
+  confidence: 0.96
+  final_reason: “第5章 面部表情背后的科学”为最高层级章标题，后接引文和正文，应划分新章。
+  accepted_evidence:
+  - 该行编号为“第5章”，属于最高层级章标题。
+  - 前有第4章总结7650-7660，后接引文和正文。
+  rejected_evidence:
+  - 复核方提出“背后的科学”可能像小标题，但编号和位置符合章标题。
+  need_human_review: false
+- 'no': 8172
+  confidence: 0.96
+  final_reason: “第6章 了解舒适和不适的非语言表现”为最高层级章标题，前有第5章总结，后接引文和正文，应划分新章。
+  accepted_evidence:
+  - 该行编号为“第6章”，属于最高层级章标题。
+  - 前有第5章总结8158-8170，后接引文和正文。
+  rejected_evidence:
+  - 复核方提出标题较长，但仍小于30字且无句号，位置符合章标题。
+  need_human_review: false
+- 'no': 8366
+  confidence: 0.95
+  final_reason: “第三部分 科学解码”为部分标题，按部分-章节模式划分新章。
+  accepted_evidence:
+  - 该行为“第三部分 科学解码”，属于部分层级标题。
+  - 后列第7至第8章，前有第6章总结。
+  rejected_evidence:
+  - 复核方提出部分标题可能只是章节导览，但按部分-章节模式仍应划分。
+  need_human_review: false
+- 'no': 8371
+  confidence: 0.96
+  final_reason: “第7章 人类情感处理器”为最高层级章标题，后接引文和正文，应划分新章。
+  accepted_evidence:
+  - 该行编号为“第7章”，属于最高层级章标题。
+  - 前有第三部分标题及章列表，后接引文和正文。
+  rejected_evidence:
+  - 复核方提出标题可能像正文小标题，但存在章编号且位置明确。
+  need_human_review: false
+- 'no': 8557
+  confidence: 0.96
+  final_reason: “第8章 关于诱导的非语言方面”为最高层级章标题，前有第7章总结，后接引文和正文，应划分新章。
+  accepted_evidence:
+  - 该行编号为“第8章”，属于最高层级章标题。
+  - 前有第7章总结，后接引文和正文。
+  rejected_evidence:
+  - 复核方提出标题含“非语言方面”像节标题，但层级为章。
+  need_human_review: false
+- 'no': 8833
+  confidence: 0.95
+  final_reason: “第四部分 信息整合”为部分标题，按部分-章节模式划分新章。
+  accepted_evidence:
+  - 该行为“第四部分 信息整合”，属于部分层级标题。
+  - 后列第9章，前有第8章总结。
+  rejected_evidence:
+  - 复核方提出部分标题后仅列一章，可能被误认为目录条目，但仍是部分结构。
+  need_human_review: false
+- 'no': 8837
+  confidence: 0.96
+  final_reason: “第9章 非语言交流及社会工程师人类”为最高层级章标题，后接引文和正文，应划分新章。
+  accepted_evidence:
+  - 该行编号为“第9章”，属于最高层级章标题。
+  - 前有第四部分标题及章列表，后接引文和正文。
+  rejected_evidence:
+  - 复核方提出标题较长，但仍小于30字且正文位置明确。
+  need_human_review: false
+rejected_lines: []

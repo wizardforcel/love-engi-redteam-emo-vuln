@@ -1,0 +1,108 @@
+reviews:
+- 'no': 6111
+  overturn_probability: 0.55
+  alternative: 第一本书正文后的目录页标题（Table of Contents），属于目录/排版标题，而非正文最高层级章标题
+  counter_evidence:
+  - 该行是英文“Table of Contents”，不是“第X章”或“第X部分”等章层级标题。
+  - 其后 6113 起是版权信息、献词、序、前言及第1章等目录条目列表，而不是由该标题统领的正文内容。
+  - 前文 6101-6109 已是第一本书第9章小结，6111 紧接其后，更像是正文结束后的目录切换点，而非新章起始。
+  keep_split: false
+- 'no': 6271
+  overturn_probability: 0.35
+  alternative: 第二本书书名页/封面标题，属于正文之前前置内容的排版标题
+  counter_evidence:
+  - 该行是英文书名“Unmasking the Social Engineer”，不是章标题或部分标题。
+  - 其下 6273 副标题、6275 中文书名、6288 版权信息等均为封面/版权页内容，而非该标题统领的正文。
+  - 若按“正文之前内容统一划分为一章”处理，分章点更宜放在版权页或前言起始处；以书名页单独分章可能只是封面切换。
+  keep_split: true
+- 'no': 6606
+  overturn_probability: 0.05
+  alternative: 正文中的第一部分标题；若不分章则只是部分导览或排版分隔标题
+  counter_evidence:
+  - 该行是“第一部分 基础概念”，属于部分层级标题；上下文 6594-6604 为前言结尾，6608-6609 列出本部分章节，6611 起为第1章正文。
+  - 唯一可疑点是部分标题可能来自目录，但此处后接正文且没有目录列表特征。
+  keep_split: true
+- 'no': 6611
+  overturn_probability: 0.03
+  alternative: 正文第1章标题；若不分章则可能是目录条目或页眉残留
+  counter_evidence:
+  - 该行前有部分标题 6606，后接引文和正文段落，编号“第1章”为最高层级。
+  - 反方：其格式与目录条目相似，但上下文不是目录，而是正文开篇。
+  keep_split: true
+- 'no': 6881
+  overturn_probability: 0.03
+  alternative: 正文第2章标题；若不分章则可能是目录条目或页眉残留
+  counter_evidence:
+  - 该行独立成行、无句号、编号为第2章，前有第1章总结 6871-6879，后接引文和正文。
+  - 反方：标题中的空格排版可能来自自动生成目录，但其位置在正文中。
+  keep_split: true
+- 'no': 7228
+  overturn_probability: 0.05
+  alternative: 正文第二部分标题；若不分章则可能是部分导览或排版分隔标题
+  counter_evidence:
+  - 该行是“第二部分 破译肢体语言”，前有第2章总结 7216-7226，后列第3至第6章。
+  - 反方：部分标题后紧接列表，可能被误认为目录标题；但这是正文中的部分导览。
+  keep_split: true
+- 'no': 7235
+  overturn_probability: 0.03
+  alternative: 正文第3章标题；若不分章则可能是目录条目
+  counter_evidence:
+  - 独立成行、编号第3章，后接引文和正文；前有第二部分标题及章列表。
+  - 反方：与目录中“第3章 了解手的语言”重复，但此处上下文为正文。
+  keep_split: true
+- 'no': 7534
+  overturn_probability: 0.03
+  alternative: 正文第4章标题；若不分章则可能是目录条目或页眉残留
+  counter_evidence:
+  - 编号第4章，前有第3章总结 7522-7532，后接引文和正文。
+  - 反方：标题格式较简，可能来自目录；但后文第4章正文证实其章标题性质。
+  keep_split: true
+- 'no': 7662
+  overturn_probability: 0.03
+  alternative: 正文第5章标题；若不分章则可能是目录条目
+  counter_evidence:
+  - 编号第5章，后接引文和正文；前有第4章总结 7650-7660。
+  - 反方：标题中“背后的科学”可能像小标题，但编号和位置符合章标题。
+  keep_split: true
+- 'no': 8172
+  overturn_probability: 0.03
+  alternative: 正文第6章标题；若不分章则可能是目录条目
+  counter_evidence:
+  - 编号第6章，前有第5章总结 8158-8170，后接引文和正文。
+  - 反方：标题较长但仍小于30字，且无句号。
+  keep_split: true
+- 'no': 8366
+  overturn_probability: 0.05
+  alternative: 正文第三部分标题；若不分章则可能是部分导览或排版分隔标题
+  counter_evidence:
+  - 该行是“第三部分 科学解码”，后列第7至第8章；前有第6章总结。
+  - 反方：部分标题可能只是章节导览，但按部分-章节模式应分。
+  keep_split: true
+- 'no': 8371
+  overturn_probability: 0.03
+  alternative: 正文第7章标题；若不分章则可能是目录条目
+  counter_evidence:
+  - 编号第7章，后接引文和正文；前有第三部分标题及章列表。
+  - 反方：标题“人类情感处理器”可能像正文小标题，但有章编号。
+  keep_split: true
+- 'no': 8557
+  overturn_probability: 0.03
+  alternative: 正文第8章标题；若不分章则可能是目录条目
+  counter_evidence:
+  - 编号第8章，后接引文和正文；前有第7章总结。
+  - 反方：标题含“非语言方面”像节标题，但层级为章。
+  keep_split: true
+- 'no': 8833
+  overturn_probability: 0.05
+  alternative: 正文第四部分标题；若不分章则可能是部分导览或排版分隔标题
+  counter_evidence:
+  - 该行是“第四部分 信息整合”，后列第9章；前有第8章总结。
+  - 反方：部分标题后仅列一章，可能被误认为目录条目；但仍是部分结构。
+  keep_split: true
+- 'no': 8837
+  overturn_probability: 0.03
+  alternative: 正文第9章标题；若不分章则可能是目录条目
+  counter_evidence:
+  - 编号第9章，后接引文和正文；前有第四部分标题及章列表。
+  - 反方：标题较长但小于30字，且正文位置明确。
+  keep_split: true

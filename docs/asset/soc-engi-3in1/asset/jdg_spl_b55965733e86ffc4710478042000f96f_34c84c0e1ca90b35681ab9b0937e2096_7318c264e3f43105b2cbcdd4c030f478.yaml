@@ -1,0 +1,72 @@
+chapter_starts:
+- 'no': 9273
+  confidence: 0.8
+  final_reason: 复核方基本认可为正文前内容起始，虽为版权相关标题，但其后连续涵盖献词、序、致谢、引言等前置部分，按“前言、序言、致谢等正文之前内容统一划分为一章”规则采纳
+  accepted_evidence:
+  - '该行之后紧接 ## 献词、## 序、## 致谢、## 引言等正文前材料'
+  - 位于正文第1章 9499 之前，符合前置章节的区段位置
+  - 格式为二级标题单独成行，统领后续前置内容
+  rejected_evidence:
+  - '复核方指出该行是版权声明子标题，可能与前面 ## 版权信息 9011 同属版权页'
+  - 复核方提示若按统一前置分章，起始可能应更早，存在切碎风险
+  need_human_review: false
+- 'no': 9499
+  confidence: 0.99
+  final_reason: 正文第1章标题，单独成行，后接概述段落与1.1子节，符合全书最高层级大章特征
+  accepted_evidence:
+  - '标题为 ## 第1章　真实世界的钓鱼攻击，单独成行'
+  - '后1~3行为概述段落，随后出现 ### 1.1 网络钓鱼基础 子节'
+  - 与后续第2章起止形成连贯正文结构
+  rejected_evidence:
+  - 复核方提示9046行目录中存在相同标题的重复项
+  need_human_review: false
+- 'no': 9996
+  confidence: 0.99
+  final_reason: 正文第2章标题，单独成行，后接概述段落与2.1子节
+  accepted_evidence:
+  - '标题为 ## 第 2 章 决策背后的心理学原则，单独成行'
+  - '后接引言段落，随后出现 ### 2.1 决策：观一滴水可知沧海'
+  - 与前后章节衔接完整
+  rejected_evidence:
+  - 复核方提示9064行目录中存在重复标题
+  need_human_review: false
+- 'no': 10347
+  confidence: 0.99
+  final_reason: 正文第3章标题，单独成行，后接概述段落与3.1子节
+  accepted_evidence:
+  - '标题为 ## 第3章　影响与操控，单独成行'
+  - '后接概述段落，随后出现 ### 3.1 为什么这种区别很重要'
+  rejected_evidence:
+  - 复核方提示9090行目录中存在重复标题
+  need_human_review: false
+- 'no': 10660
+  confidence: 0.99
+  final_reason: 正文第4章标题，单独成行，后接概述段落与4.1子节
+  accepted_evidence:
+  - '标题为 ## 第 4 章 保护课程，单独成行'
+  - '后接概述段落，随后出现 ### 4.1 第一课：批判性思维'
+  rejected_evidence:
+  - 复核方提示9138行目录中存在重复标题
+  need_human_review: false
+- 'no': 11046
+  confidence: 0.99
+  final_reason: 正文第5章标题，单独成行，后接概述段落与5.1子节
+  accepted_evidence:
+  - '标题为 ## 第5章 规划钓鱼攻击旅程：开展企业钓鱼攻击项目，单独成行'
+  - '后接概述段落，随后出现 ### 5.1 基本方法'
+  rejected_evidence:
+  - 复核方提示9174行目录中存在重复标题
+  need_human_review: false
+- 'no': 11615
+  confidence: 0.99
+  final_reason: 正文第6章标题，单独成行，后接概述段落与6.1子节
+  accepted_evidence:
+  - '标题为 ## 第 6 章  积极的、消极的和丑陋的：公司政策及其他，单独成行'
+  - '后接概述段落，随后出现 ### 6.1 跟着感觉走：情绪和政策'
+  rejected_evidence:
+  - 复核方提示9200行目录中存在重复标题
+  need_human_review: false
+rejected_lines:
+- 'no': 8945
+  reason: '复核方反方证据成立：无“第X章”编号，为二级标题 ## 小白要批判，专家要灵活，后接 ### 社会工程专家Christopher Hadnagy访谈，属于第9章后的访谈/附录附加材料，目录中未收录为正式章节，不符合全书最高层级大章特征'
+  need_human_review: false

@@ -1,0 +1,32 @@
+chapter_starts:
+- 'no': 11902
+  confidence: 0.95
+  final_reason: 标题为‘## 第 7 章 专业钓鱼攻击者的工具包’，编号特征符合全书最高层级大章‘第 X 章’，单独成行、无句末标点、长度符合，且上下文从第6章政策讨论明显转向新主题工具包。复核方反证力度弱、overturn_probability
+    0.07且 keep_split 为 true，采纳分割。
+  accepted_evidence:
+  - 标题包含‘第 7 章’，符合最高层级编号特征
+  - 行单独成行，标题末无句号，长度<30字，排版符合章标题格式
+  - 上下文在11900-11901结束第6章内容后断开，11902后开启工具介绍新主题
+  - 复核方 overturn_probability 0.07，keep_split true
+  rejected_evidence:
+  - '复核方提及 Markdown ## 标记可能为排版转换噪声'
+  - 标题后第1-2行为块引用引文，典型概述段落出现较晚
+  need_human_review: false
+- 'no': 12507
+  confidence: 0.95
+  final_reason: 标题为‘## 第 8 章 像老板一样进行钓鱼攻击’，编号特征为‘第 8 章’最高层级大章，单独成行、无句末标点，语义统领后续总结性内容。复核方反证弱、overturn_probability
+    0.06且 keep_split 为 true，采纳分割。
+  accepted_evidence:
+  - 标题包含‘第 8 章’，符合最高层级大章编号
+  - 单独成行、标题末无标点，格式符合章标题
+  - 前后文从第7章工具对比明确转向最终章的总结与建议，上下文断开明显
+  - 复核方 overturn_probability 0.06，keep_split true
+  rejected_evidence:
+  - 复核方称标题后紧跟引文块，概述段落出现较晚
+  - 表述偏口语化且 Markdown 层级与前文混用存在排版噪声嫌疑
+  need_human_review: false
+rejected_lines:
+- 'no': 12671
+  reason: 标题‘## 看完了’口语化、无编号、不具统领性，后续内容为 contact@turingbook.com、微博微信等出版社联系方式，属于文末出版信息而非规则中应分章的前言/致谢/索引等类型。第8章总结已于12670结束，此处为正文后附录式信息。复核方
+    overturn_probability 0.88 反驳成立，判断方证据不足，不应分章。
+  need_human_review: false
