@@ -1,65 +1,23 @@
-<!--
-    需要填充的占位符：
-    
-    README.md
-    
-        {name}：文档中文名
-        {nameEn}：文档英文名
-        {urlEn}：文档原始链接
-        {domain}：域名前缀
-        {adminName}：负责人名称
-        {adminUn}：负责人 Github 用户名
-        {adminQq}：负责人 QQ
-        {repo}：ApacheCN 的 Github 仓库名称
-        {dockerName}：DockerHub 仓库名称
-        {pypiName}：PYPI 包名称
-        {npmName}：NPM 包名称
-    
-    CNAME
-    
-        {domain}：域名前缀
+# 《恋爱工程：红队视角下的情感漏洞》
 
-    index.html
-    
-        {name}：文档中文名
-        {color}：显示颜色
-        {repo}：ApacheCN 的 Github 仓库名称
+> 用红队（攻击方）的视角，拆解亲密关系里的操控链条；用防御方的视角，把识别点前移到更早的环节。
 
-    asset/docsify-flygon-footer.js
-    
-        {repo}：ApacheCN 的 Github 仓库名称
--->
+这不是一本教你"如何操控别人"的书，而是一本**识人、识局、识自己**的书。
 
-# {name}
+它把社会工程学里的信息收集、诱导、伪装、心理战术、非语言信号、影响原则、反取证与保护课程，按一段关系从"接近"到"退出"的真实顺序重新组织，拆成 28 章。
 
-> 原文：[{nameEn}]({urlEn})
-> 
-> 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-> 
-> 阶段：机翻（1）
-> 
-> 敢于公开博弈，敢于激化矛盾，敢于同归于尽！
+## 你会读到什么
 
-* [在线阅读](https://{domain}.flygon.net)
+- **攻击链的完整阶段**：从目标筛选、接近、人设、吸引、信息采集，到着迷、控制、贬低、煤气灯、抛弃回吸、隔离、监控、退出和退出后的叙事管理。
+- **每个阶段的可检测痕迹**：不是让你变成侦探，而是让你在"感觉不对劲"的时候，知道该看什么。
+- **每节末尾的小练习**：以观察、拆解、校准为导向，不要求你在真实关系中试验攻击技术。
+- **核心概念的 Mermaid 图表**：把抽象的机制画成看得见的流程。
 
-## 下载
+## 阅读顺序
 
-### Docker
+全书共七个部分，建议按顺序读。每一章都可以独立理解，但攻击链是一个整体，连着读更能看清"一步一步走进去"的过程。
 
-```
-docker pull apachecn0/{dockerName}
-docker run -tid -p <port>:80 apachecn0/{dockerName}
-# 访问 http://localhost:{port} 查看文档
-```
+## 一句话原则
 
-### NPM
+理解攻击者的阶段部署和成本计算，是防御方把识别点前移到更早环节的必要条件；但理解不等于中立化，分析的终点，是**增加关系中双方的判断自由**。
 
-```
-npm install -g {npmName}
-{npmName} <port>
-# 访问 http://localhost:{port} 查看文档
-```
-
-## 赞助我
-
-![](https://img-blog.csdnimg.cn/20200112005920729.png)
